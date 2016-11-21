@@ -1,24 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package gramy;
+package rzutkosciagra;
 
 import java.util.Random;
 
-/**
- *
- * @author Student
- */
 public class PlayerComp extends Player {
-
-    Random r = new Random();
-
-    public int guess() {
-        int guess;
-        guess = r.nextInt(6) + 1;
-        return guess;
+    
+    public PlayerComp(){
+        
     }
-
+    
+    public PlayerComp(String name){
+        super(name);
+    }
+    String name;
+    
+    
+    @Override
+     public int guess(){
+        Random random = new Random();
+        return random.nextInt(6)+1; 
+     }
+     
+    
+    
 }
+
+//singleton

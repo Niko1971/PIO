@@ -1,24 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package gramy;
 
-import java.util.*;
+package rzutkosciagra;
 
-/**
- *
- * @author Student
- */
+import java.util.Scanner;
+
 public class PlayerHuman extends Player {
-
-    Scanner klawiatura = new Scanner(System.in);
-
-    @Override
-    public int guess() {
-        int d = klawiatura.nextInt();
-        return d;
+    private Scanner scanner = new Scanner(System.in);
+    
+    public PlayerHuman(){
+        
     }
+    
+    public PlayerHuman(String name){
+        super(name);
+    }
+    
+    public int guess(){
+        System.out.println("Pick your numer!");
+        return scanner.nextInt();
 
+    }
 }
