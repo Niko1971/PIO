@@ -3,15 +3,15 @@ package rzutkosciagra;
 abstract public class Player {
 
     protected String name = "Anonim";
-    public Player()
-    {
-    
+
+    public Player() {
+
     }
-    
-    public Player(String name){
+
+    public Player(String name) {
         setName(name);
     }
-    
+
     abstract public int guess();
 
     public final void setName(String name) {
@@ -27,6 +27,5 @@ abstract public class Player {
     public String getName() {
         return name;
     }
-    
 
 }
